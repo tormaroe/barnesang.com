@@ -1,0 +1,8 @@
+---
+layout: song
+title: This is the post title
+---
+
+Dette er et avsnitt
+
+Dette er et annet avsnitt
