@@ -1,0 +1,14 @@
+
+task :default => [
+	:clean, 
+	:generate
+] do
+end
+
+task :generate do
+	sh "jekyll"
+end
+
+task :clean do
+	sh 'del /S /Q _site\*'
+end

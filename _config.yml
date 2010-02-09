@@ -1,3 +1,4 @@
 auto: false
-server: true
+server: false
 permalink: :title.html
+exclude: README.markdown, rakefile
