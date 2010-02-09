@@ -1,4 +1,4 @@
 auto: false
 server: false
-permalink: :title.html
+permalink: /:title.html
 exclude: README.markdown, rakefile
