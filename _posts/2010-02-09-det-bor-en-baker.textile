@@ -1,0 +1,12 @@
+---
+layout: song
+title: Det bor en baker
+---
+Der bor en baker i Østre Aker
+han baker kringler og julekaker.
+Han baker store, han baker sm&aring;,
+han baker noen med sukker p&aring;.
+Og i hans vindu st&aring;r rare saker,
+tenk, hester, griser og pepperkaker.
+Og har du penger, s&aring; kan du f&aring;,
+og har du ikke, s&aring; kan du g&aring;.

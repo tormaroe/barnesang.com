@@ -1,0 +1,12 @@
+---
+layout: song
+title: Noen sover inne
+---
+Noen sover inne,
+og noen sover ute,
+h&oslash;na p&aring; en pinne,
+og gutten p&aring; en pute,
+fattigmann p&aring; l&aring;ve,
+og kongen i et slott.
+N&aring; m&aring; alle sove,
+og sove riktig godt.
