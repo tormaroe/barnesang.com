@@ -16,7 +16,7 @@
 	</div>
 	<div id="menu">
 		<ul>
-			<li class="active"><a href="index.html">hjem</a></li>
+			<li class="active"><a href="index.html">alle sangene</a></li>
 			<!--li><a href="#">alle sanger</a></li>
 			<li><a href="#">Om barnesang.com</a></li>
 			<li><a href="#">lenker</a></li-->
@@ -40,9 +40,10 @@
 		<ul>
 			<li id="search">
 				<h2><b>S&oslash;k</b> etter en sang</h2>
-				<form method="get" action="">
+				<form method="get" action="http://www.google.no/search?">
 					<fieldset>
-					<input type="text" id="s" name="s" value="" />
+						<input type="text" id="as_q" name="as_q" value="" />
+						<input type="hidden" id="as_sitesearch" name="as_sitesearch" value="barnesang.com" />
 					<input type="submit" id="x" value="S&oslash;k" />
 					</fieldset>
 				</form>
@@ -57,27 +58,35 @@
 <div id="footer">
 	<div class="wrap">
 		<div id="fbox1" class="box2">
-			<h2><b>Lorem</b> Ipsum</h2>
-			<p>Curabitur tellus. Phasellus tellus <a href="#">turpis iaculis</a> in, faucibus lobortis, posuere in, lorem. Donec a ante. Donec neque purus, adipiscing id <a href="#">eleifend a cursus</a> vel odio. Vivamus varius justo amet porttitor iaculis, ipsum massa aliquet nulla, non elementum mi elit a mauris. In hac habitasse platea.</p>
+			<h2><b>Om</b> barnesang.com</h2>
+			<p>Barnesang.com gir deg teksten p&aring; tradisjonelle barnesanger som du selv vokste opp med, og som du &oslash;nsker &aring; videref&oslash;re til dine barn. Sp&oslash;rsm&aring;l og andre henvendelser kan rettes til <a href="mailto:post@barnesang.com">post@barnesang.com</a>.</p>
 		</div>
 		<div id="fbox2" class="box2">
-			<h2><b>Metus</b> Nonummy</h2>
+			<h2><b>Utvalgte</b> sanger</h2>
 			<ul>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Nec metus sed donec</a></li>
-				<li><a href="#">Velit semper nisi molestie</a></li>
-				<li><a href="#">Consequat sed cursus</a></li>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
+				{% unless site.related_posts %}
+				{% for post in site.posts limit:5 %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+				{% endunless %}
+				
+				{% for post in site.related_posts limit:5 %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
 			</ul>
 		</div>
 		<div id="fbox3" class="box2">
-			<h2><b>Metus</b> Nonummy</h2>
+			<h2><b>Mest</b> popul&aelig;re</h2>
 			<ul>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Nec metus sed donec</a></li>
-				<li><a href="#">Velit semper nisi molestie</a></li>
-				<li><a href="#">Consequat sed cursus</a></li>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
+				{% unless site.related_posts %}
+				{% for post in site.posts limit:5 offset:5 %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+				{% endunless %}
+				
+				{% for post in site.related_posts limit:5 offset:5 %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
 			</ul>
 		</div>
 	</div>

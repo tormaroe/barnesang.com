@@ -2,7 +2,7 @@
 layout: song
 title: Det bor en baker
 ---
-Der bor en baker i Østre Aker
+Der bor en baker i &Oslash;stre Aker
 han baker kringler og julekaker.
 Han baker store, han baker sm&aring;,
 han baker noen med sukker p&aring;.

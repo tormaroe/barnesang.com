@@ -95,6 +95,9 @@ input, textarea, select {
 
 #logo {
 	float: left;
+	height:50px;
+	background: url(images/bearbox.png) no-repeat;
+	padding-left:60px;
 }
 
 #logo h1 {

@@ -6,7 +6,7 @@ task :default => [
 end
 
 task :generate do
-	sh "jekyll"
+	sh "jekyll --auto --server"
 end
 
 task :clean do
