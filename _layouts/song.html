@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
-<h1 class="title">{{page.title}}</h1>
+<table border="0" width="100%">
+	<tr>
+		<td valign="top" style="width:200px;">{% include adsense_160_300.html %}</td>
+		<td valign="top">
+			<h1 class="title">{{page.title}}</h1>
 			<div class="entry">
-				<div style="padding-left:25px;">{{ content }}</div>
+				{{ content }}
 			</div>
+		</td>
+	</tr>
+</table>
