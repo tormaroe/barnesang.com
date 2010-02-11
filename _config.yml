@@ -2,3 +2,6 @@ auto: false
 server: false
 permalink: /:title.html
 exclude: README.markdown, rakefile
+ftp_host: ftp.kjempekjekt.com
+ftp_dir: /barnesang.com/glynn
+
