@@ -5,6 +5,10 @@ task :default => [
 ] do
 end
 
+task :pub do
+	sh "glynn"
+end
+
 task :generate do
 	sh "jekyll --auto --server"
 end
