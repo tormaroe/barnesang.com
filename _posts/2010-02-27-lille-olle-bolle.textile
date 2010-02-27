@@ -1,0 +1,9 @@
+---
+layout: song
+title: Lille Olle Bolle
+---
+Oppe p&aring; fjellet der bor det tre troller,
+Trollemor og trollefar og lille Olle Bolle
+"B&Oslash;!!" sier Trollefar, 
+"B&oslash;!" sier Trollemor, 
+men den lille Olle Bolle sier bare "b&oslash;"
